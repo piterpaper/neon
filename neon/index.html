@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>N_E_O_N</title>
+</head>
+<body>
+	<section>
+		<h2>HELLO,</h2>
+		<h2>WORLD!</h2>
+		<div class="circle"></div>
+	</section>
+
+	<script>
+		const pos = document.documentElement;
+		pos.addEventListener('mousemove', e =>{
+			pos.style.setProperty('--x', e.clientX + 'px');
+			pos.style.setProperty('--y', e.clientY + 'px');
+
+		});
+
+	</script>
+</body>
+</html>
